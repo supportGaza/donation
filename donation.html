@@ -12,7 +12,7 @@
         type="image/x-icon">
 
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/donation.css">
 </head>
 
 <body>
@@ -38,8 +38,37 @@
             </section>
 
             <div id="form">
-                <ul></ul>
-                <ul></ul>
+
+                <section id="sec1">
+                    <ul>
+                        <h2>name</h2>
+                        <h2>phone</h2>
+                        <h2>email</h2>
+                        <h2>address</h2>
+                        <h2>Card Info</h2>
+                        <h2>Cash</h2>
+                    </ul>
+    
+                    <ul>
+                        <input type="text" name="name" id="data0">
+                        <input type="text" name="phone" id="data1">
+                        <input type="text" name="email" id="data2">
+                        <input type="text" name="address" id="data3">
+                        <input type="text" name="Card" id="data4">
+                        <input type="text" name="Cash" id="data5">
+                    </ul>
+                </section>
+                
+
+                <section id="sec2">
+                    <input type="checkbox" name="labelBox" id="labelBox">
+
+                    <h2 id="label">Donate as Private</h2>
+
+                    <button id="btnSave"> Submit </button>
+                </section>
+
+
             </div>
         </div>
 
@@ -52,6 +81,8 @@
     <footer>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti vitae exercitationem voluptate.</p>
     </footer>
+
+
     <script src="js/app.js"></script>
     <script src="js/donation.js"></script>
 </body>
