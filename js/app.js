@@ -1,15 +1,54 @@
 'use strict'
 
-function PCash(item){
-    this.item = item;
+function PCash(item, items) {  //  main constructure
+  this.item = item;
+  this.items = items;
 }
 
-PCash.prototype.getData = function (name,phone,email,address,card,cash,check){
-  this.item = new Call(name,phone,email,address,card,cash,check);
-  console.log(Call.cashDataArray);
+
+// Function for Cash local storage
+PCash.prototype.getData = function (name, phone, email, address, card, cash, check) {
+  this.item = new Call(name, phone, email, address, card, cash, check);
+  //   console.log(Call.cashDataArray);
+
+  let CPrivate = JSON.stringify(Call.cashDataArray);
+  localStorage.setItem("CPrivate", CPrivate);
 };
 
-function Call(name,phone,email,address,card,cash,check){
+
+
+//  Function  for  Stuff  local  storage 
+PCash.prototype.getDataStuff = function (name, phone, email, address, card, cash, check) {
+  this.items = new CallStuff(name, phone, email, address, card, cash, check);
+  //   console.log(Call.cashDataArray);
+
+  let SPrivate = JSON.stringify(CallStuff.cashDataArrayStuff);
+  localStorage.setItem("SPrivate", SPrivate);
+};
+
+
+//  Cash  Constructure
+
+
+
+function Call(name, phone, email, address, card, cash, check) {
+  this.name = name;
+  this.phone = phone;
+  this.email = email;
+  this.address = address;
+  this.card = card;
+  this.cash = cash;
+  this.check = check;
+
+  Call.cashDataArray.push(this);
+}
+
+Call.cashDataArray = [];
+
+
+
+//   Stuff  Constructure
+function CallStuff(name,phone,email,address,card,cash,check){
     this.name=name;
     this.phone=phone;
     this.email=email;
@@ -18,7 +57,8 @@ function Call(name,phone,email,address,card,cash,check){
     this.cash=cash;
     this.check=check;
 
-    Call.cashDataArray.push(this);
+    CallStuff.cashDataArrayStuff.push(this);
 }
 
-Call.cashDataArray = []; 
+CallStuff.cashDataArrayStuff = []; 
+
