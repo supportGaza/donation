@@ -1,7 +1,10 @@
 'use strict'
+const pCach = new PCash([]);
 
 let num = 6;
-
+let btnSave ;
+let inputData;
+let checkBox;
 let btnCash = document.getElementById('cash');
 let btnStuff = document.getElementById('stuff');
 
@@ -36,7 +39,7 @@ function createCash(event){ // Create function for cash
    }
 
    for(let i=0;i<num;i++){  // Input  Text
-    let inputData = document.createElement('input');
+     inputData = document.createElement('input');
     inputData.type = "text";
     inputData.id = `data${i}`;
     
@@ -44,8 +47,52 @@ function createCash(event){ // Create function for cash
 
 }
 
+//  creat button to submit
     let sectionEl2 = document.createElement('section');
+    formEl.appendChild(sectionEl2);
+
+     btnSave = document.createElement('button');
+    sectionEl2.appendChild(btnSave);
+
+    btnSave.type ="click";
+    btnSave.textContent = "Submit"
+    btnSave.id = 'btnSave';
+    //  call it from local storage
+
+
+// creat cheak box 
+
+let labelBox = document.createElement('h2');
+sectionEl2.appendChild(labelBox);
+labelBox.textContent = "Private";
+labelBox.id = "labelBox";
+
+ checkBox = document.createElement('input');
+checkBox.type = "checkBox"
+sectionEl2.appendChild(checkBox);
+checkBox.id = "checkBox";
+
+
 }
+btnSave.addEventListener("click",setData);
+
+function setData (event){
+    event.preventDefault();
+
+    let nameUser = document.getElementById('data0'),
+      phoneUser = document.getElementById('data1'),
+      emailUser = document.getElementById('data2'),
+      addressUser = document.getElementById('data3'),
+      cardUser = document.getElementById('data4'),
+      cashUser = document.getElementById('data5'),
+      checkUser = document.getElementById('checkBox');
+
+  
+    pCach.getData(nameUser.value,phoneUser.value,emailUser.value,addressUser.value,cardUser.value,cashUser.value,checkUser.checked);
+
+    
+}
+ 
 
 function createStuff(event){
     event.preventDefault();
