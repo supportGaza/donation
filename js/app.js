@@ -1,6 +1,6 @@
 'use strict'
 
-function PCash(item, items) {  //  main constructure
+const PCash = function (item, items) {  //  main constructure
   this.item = item;
   this.items = items;
 }
@@ -31,7 +31,7 @@ PCash.prototype.getDataStuff = function (name, phone, email, address, card, cash
 
 
 
-function Call(name, phone, email, address, card, cash, check) {
+const Call = function (name, phone, email, address, card, cash, check) {
   this.name = name;
   this.phone = phone;
   this.email = email;
@@ -48,17 +48,17 @@ Call.cashDataArray = [];
 
 
 //   Stuff  Constructure
-function CallStuff(name,phone,email,address,card,cash,check){
-    this.name=name;
-    this.phone=phone;
-    this.email=email;
-    this.address=address;
-    this.card=card;
-    this.cash=cash;
-    this.check=check;
+const CallStuff = function (name, phone, email, address, card, cash, check) {
+  this.name = name;
+  this.phone = phone;
+  this.email = email;
+  this.address = address;
+  this.card = card;
+  this.cash = cash;
+  this.check = check;
 
-    CallStuff.cashDataArrayStuff.push(this);
+  CallStuff.cashDataArrayStuff.push(this);
 }
 
-CallStuff.cashDataArrayStuff = []; 
+CallStuff.cashDataArrayStuff = [];
 

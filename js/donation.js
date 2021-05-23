@@ -240,13 +240,17 @@ function setDataStuff(event){
 
 function render(){
     let CPrivate = JSON.parse(localStorage.getItem("CPrivate"));
-    if(CPrivate !== null || CPrivate !== undefined){
+    if(CPrivate == null || CPrivate == undefined){
+        let a;
+    }else{
         Call.cashDataArray = CPrivate;
     }
 
 
     let SPrivate = JSON.parse(localStorage.getItem("SPrivate"));
-    if(SPrivate !== null || SPrivate !== undefined){
+    if(SPrivate == null || SPrivate == undefined){
+       let a;
+    }else{
         CallStuff.cashDataArrayStuff = SPrivate;
     }
 }
