@@ -1,4 +1,5 @@
 'use strict'
+// 3
 
 const PCash = function (item, items) {  //  main constructure
   this.item = item;
@@ -8,10 +9,12 @@ const PCash = function (item, items) {  //  main constructure
 
 // Function for Cash local storage
 PCash.prototype.getData = function (name, phone, email, address, card, cash, check) {
+
+
   this.item = new Call(name, phone, email, address, card, cash, check);
   //   console.log(Call.cashDataArray);
 
-  let CPrivate = JSON.stringify(Call.cashDataArray);
+  let CPrivate = JSON.stringify(Call.cashDataArray); // cash
   localStorage.setItem("CPrivate", CPrivate);
 };
 
@@ -22,15 +25,12 @@ PCash.prototype.getDataStuff = function (name, phone, email, address, card, cash
   this.items = new CallStuff(name, phone, email, address, card, cash, check);
   //   console.log(Call.cashDataArray);
 
-  let SPrivate = JSON.stringify(CallStuff.cashDataArrayStuff);
+  let SPrivate = JSON.stringify(CallStuff.cashDataArrayStuff); // Stuff
   localStorage.setItem("SPrivate", SPrivate);
 };
 
 
 //  Cash  Constructure
-
-
-
 const Call = function (name, phone, email, address, card, cash, check) {
   this.name = name;
   this.phone = phone;
