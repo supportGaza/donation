@@ -1,0 +1,175 @@
+header{
+    width: 1350px;;
+    height: 1000px;
+    background-image: url('/img/new1.png');
+}
+body{
+    background-color: #fbfbfd;
+}
+nav{
+    float: left;
+    margin-top: 20px;
+}
+#logo{
+    margin-top: 35px;
+    position: absolute;
+    margin-left: 54px;
+    font-size: 27px;
+    color: rgb(247, 234, 212);
+    font-family: 'Lobster', cursive;
+}
+#call{
+    float: right;
+    margin-top: 13px;
+    margin-right: 40px;
+    color: rgb(218 206 201);
+    font-size: 16px;
+    border: 1px solid;
+    padding: 10px;
+    background-color: #8b2b01;
+}
+nav ul li{
+    display: inline-block;
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-left: 139px;
+}
+ul{
+    margin-left: 182px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(247, 234, 212);
+    font-size: 18px;
+    
+}
+.one img{
+    width: 50px;
+    margin-top: 7px;
+    height: 77px;
+    opacity: .7;
+    float: left;
+}
+
+.one{
+    margin-left: 20px;
+}
+.two{
+    position: absolute;
+    width: 404px;
+    margin-top: -691px;
+    color: rgb(214, 202, 202);
+    margin-left: 78px;
+    line-height: 33px;
+    font-size: 21px;
+}
+h3{
+    font-size: 37px;
+    margin-bottom: 20px;
+    font-family: 'Cinzel', serif;
+    font-weight: bolder;
+}
+
+.button{
+    text-decoration: none;
+    padding: 14px;
+    width: 182px;
+    margin-top: 9px;
+    color: rgb(175, 69, 27);
+    font-size: 20px;
+    background-color: #848385;
+    font-weight: bold;
+}
+.two p{
+    margin-bottom: 20px;
+}
+section{
+      width: 1350px;;
+    height: 1000px;
+}
+
+#slideshow {
+    overflow: hidden;
+    height: 510px;
+    width: 613px;
+    
+    margin-top: 34px;
+    margin-left: 60px;
+    float: left;
+  }
+  .slide-wrapper {
+    width: 2912px;
+    -webkit-animation: slide 10s ease infinite;
+  }
+  .slide {
+    float: left;
+    height: 510px;
+    width: 728px;
+  }
+  .slide:nth-child(1) {
+    background-image: url("https://cdn-attachments.timesofmalta.com/bf1e0d85f39bd7f755f8143f8d6e7a259f938fca-1620708286-f2c88224-960x640.jpg");
+  }
+  .slide:nth-child(2) {
+    background-image: url("https://cdn.iraiser.eu/PYo+yXbrJtjg1PvDuefZRg==/default/origin/gaza5.jpg");
+  }
+  .slide:nth-child(3) {
+    background-image: url("https://pbs.twimg.com/media/E17hzURXIAsOWKf.jpg");
+  }
+  .slide:nth-child(4) {
+    background-image: url("https://www.aljazeera.com/wp-content/uploads/2021/05/AP_21137407934316.jpg?resize=770%2C513");
+  }
+  .slide:nth-child(5) {
+    background-image: url("https://i.cbc.ca/1.6029180.1621215030!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_780/1232938241.jpg");
+  }
+  .slide-number {
+    color: #000;
+    text-align: center;
+    font-size: 10em;
+  }
+  @-webkit-keyframes slide {
+    20% {margin-left: 0px;}
+    30% {margin-left: -728px;}
+    50% {margin-left: -728px;}
+    60% {margin-left: -1456px;}
+    70% {margin-left: -1456px;}
+    80% {margin-left: -2184px;}
+    90% {margin-left: -2184px;}
+  }
+  #p{
+    float: left;
+    margin-left: 783px;
+    margin-top:-451px;
+    line-height: 56px;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: justify;
+  /*  font-family: 'Cinzel', serif;*/
+    color: #c33838;
+    margin-right: 111px;
+    width: 503px;
+}
+h2{
+    float: left;
+    margin-left: 783px;
+    margin-top: -514px;
+    line-height: 56px;
+    font-size: 28px;
+    font-weight: bolder;
+    text-align: justify;
+    color: #c33838;
+    margin-right: 111px;
+    width: 503px;
+}
+.button2{
+    text-decoration: none;
+    padding: 14px;
+    width: 182px;
+    margin-top: 407px;
+    color: rgb(222 115 73);
+    font-size: 20px;
+    background-color: #bbb5c1;
+    font-weight: bold;
+    position: absolute;
+    margin-left: 110px;
+    text-align: center;
+}
