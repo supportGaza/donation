@@ -2,7 +2,7 @@
 header{
   width: 100%;
   height: 1000px;
-  background-image: url('/img/new1.png');
+  background-image: url('../img/new1.png');
   background-repeat: no-repeat;
 }
 body{
