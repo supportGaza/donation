@@ -1,60 +1,79 @@
-* {
+*{
   box-sizing: border-box;
 }
-body {
+header{
+  border: 1px solid red;
+  height: 150px;
+  padding:10px ;
 }
-header {
-  width: 100%;
-  height: 1000px;
+#containerDescription{
+  width: 95%;
+  height: 400px;
+  padding: 10px;
+  border: 1px solid blue;
+
+  border: 3px solid rgb(151, 151, 228);
+  border-radius: 50px;
+
+  background: gainsboro;
+
+
+  margin: 20px;
+  text-align: center;
 }
-#logo {
-  margin-top: 35px;
-  position: absolute;
-  margin-left: 54px;
-  font-size: 27px;
-  color: rgb(247, 234, 212);
-  font-family: "Lobster", cursive;
-}
-nav {
+#abouttext{
   float: left;
-  margin-top: 20px;
+  width: 48%;
+  border: 3px solid rgb(151, 151, 228);
+  height: 350px;
+  padding: 15px;
+  border-radius: 15px;
+  margin-left: 100px;
 }
-nav ul li {
-  display: inline-block;
-  padding-left: 0px;
-  margin-top: 0px;
-  margin-left: 139px;
-}
-nav ul li a i {
-  margin-right: 10px;
-}
-ul {
-  margin-left: 110px;
-}
-nav ul li a {
-  text-decoration: none;
-  color: rgb(247, 234, 212);
-  font-size: 18px;
-}
-nav ul li a:hover {
-  color: white;
-  background-color: black;
-  padding: 20px;
-}
+#img{
+  float: left;
+  width: 350px;
+  /* border: 1px solid green; */
+  height: 350px;
+  border-radius: 15px;
+  padding: 5px;
+  margin-left: 25px;
 
-.slideimgbackground {
-  background-image: url("../img/5e1ac7ce2a61391ad35f714f5e2d5d29.png");
-  background-repeat: no-repeat;
-  display: inline-block;
-  width: auto;
-  height: auto;
 }
-.pImg:hover {
-  opacity: 0.2;
+#img img{
+  width:340px ;
+  border-radius: 15px;
+  height: 340px;
 }
+#imgslide{
+  width: 95%;
+  height: 200px;
+  padding: 10px;
+  border: 3px solid rgb(151, 151, 228);
+  border-radius: 50px;
 
-/* ///////////////////////////////// */
-img{
-    width: 500px;
-    height: 400px;
+  background: gainsboro;
+
+  margin: 20px;
+  text-align: center;
+}
+#imgslide div{
+  width: 175px;
+  height: 175px;
+  margin: 5px;
+
+  background-image: url("../img/Palasstine.png");
+  border-radius: 30px;
+  /* border: 1px solid green; */
+  display: inline-block;
+}
+#imgslide div img{
+  width: 175px;
+  border-radius: 30px;
+}
+#imgslide div img:hover{
+  opacity: 0.7;
+}
+a{
+  display: block;
 }

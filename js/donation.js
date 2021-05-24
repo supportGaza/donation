@@ -68,6 +68,11 @@ function createCash(event) { // Create function for cash
         ulElRight.appendChild(inputData);
 
     }
+    let phone = document.getElementById('data1');
+    let cashMoney = document.getElementById('data5');
+
+    phone.type = 'number';
+    cashMoney.type = 'number';
 
     for (let i = 0; i < num; i++) {  // labels
         let h2El = document.createElement('label');
@@ -155,6 +160,9 @@ function createStuff(event) { // Create function for Stuff
         ulElRight.appendChild(inputData);
 
     }
+    let phone = document.getElementById('data1');
+
+    phone.type = 'number';
 
     for (let i = 0; i < num; i++) {  // labels
         let h2El = document.createElement('label');
@@ -206,6 +214,7 @@ function createStuff(event) { // Create function for Stuff
 /////////////////////////////////////////////////////
 btnSave.addEventListener("click", setData);
 
+
 function setData(event) {
     event.preventDefault();
 
@@ -220,9 +229,10 @@ function setData(event) {
 
     // console.log(checkUser);
     // let a = event.target.labelBox.checked;
-
-
-    pCach.getData(nameUser.value, phoneUser.value, emailUser.value, addressUser.value, cardUser.value, cashUser.value, checkUser.checked);
+    if(nameUser.value == "" || phoneUser.value == "" || emailUser.value == "" || addressUser.value =="" || cardUser.value == "" || cashUser.value == ""){
+        swal("Warning", "Please fill all feilds", "warning")
+    }else{
+        pCach.getData(nameUser.value, phoneUser.value, emailUser.value, addressUser.value, cardUser.value, cashUser.value, checkUser.checked);
 
     if (checkUser.checked !== true) {
         let liEl = document.createElement('li');
@@ -233,7 +243,13 @@ function setData(event) {
     totalCash = totalCash +parseInt(cashUser.value) ;
     totalSpan.textContent = `Total Cash Donated : ${totalCash}`;
 
-    console.log(totalCash);
+    // console.log(totalCash);
+
+    swal("Good Job", "Thanks for your Donate, We will contact you urgently", 'success')
+
+    }
+
+    
 
 }
 
@@ -252,14 +268,22 @@ function setDataStuff(event) {
     // console.log(checkUser);
     // let a = event.target.labelBox.checked;
 
+    if(nameUser.value == "" || phoneUser.value == "" || emailUser.value == "" || addressUser.value =="" || cardUser.value == "" || cashUser.value == ""){
+        swal("Warning", "Please fill all feilds", "warning")
+    }else{
+        pCach.getDataStuff(nameUser.value, phoneUser.value, emailUser.value, addressUser.value, cardUser.value, cashUser.value, checkUser.checked);
 
-    pCach.getDataStuff(nameUser.value, phoneUser.value, emailUser.value, addressUser.value, cardUser.value, cashUser.value, checkUser.checked);
+        if (checkUser.checked !== true) {
+            let liEl = document.createElement('li');
+            ulElName.appendChild(liEl);
+            liEl.textContent = nameUser.value;
+        }
 
-    if (checkUser.checked !== true) {
-        let liEl = document.createElement('li');
-        ulElName.appendChild(liEl);
-        liEl.textContent = nameUser.value;
+        swal("Good Job", "Thanks for your Donate, We will contact you urgently", 'success')
+
     }
+
+    
     
 }
 
@@ -299,3 +323,5 @@ function render() {
         }
     }
 }
+
+
