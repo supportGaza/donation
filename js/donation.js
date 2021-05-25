@@ -8,6 +8,7 @@ let totalSpan = document.getElementById('totalSpan');
 
 let right = document.getElementById('right');
 let ulElName = document.createElement('ul');
+ulElName.id = 'namesList';
 right.appendChild(ulElName);
 
 
@@ -63,11 +64,17 @@ function createCash(event) { // Create function for cash
     for (let i = 0; i < num; i++) {  // Input  Text
         inputData = document.createElement('input');
         inputData.type = "text";
+        inputData.class = "infoClass";
         inputData.id = `data${i}`;
 
         ulElRight.appendChild(inputData);
 
     }
+    let phone = document.getElementById('data1');
+    let cashMoney = document.getElementById('data5');
+
+    phone.type = 'number';
+    cashMoney.type = 'number';
 
     for (let i = 0; i < num; i++) {  // labels
         let h2El = document.createElement('label');
@@ -75,6 +82,7 @@ function createCash(event) { // Create function for cash
         h2El.setAttribute("for", `data${i}`);
         ulElLeft.appendChild(h2El);
 
+        h2El.class = "labelClass";
         h2El.textContent = cashNameArray[i];
     }
 
@@ -152,9 +160,13 @@ function createStuff(event) { // Create function for Stuff
         inputData.type = "text";
         inputData.id = `data${i}`;
 
+        inputData.class = "infoClass";
         ulElRight.appendChild(inputData);
 
     }
+    let phone = document.getElementById('data1');
+
+    phone.type = 'number';
 
     for (let i = 0; i < num; i++) {  // labels
         let h2El = document.createElement('label');
@@ -162,7 +174,10 @@ function createStuff(event) { // Create function for Stuff
         h2El.setAttribute("for", `data${i}`);
         ulElLeft.appendChild(h2El);
 
+        h2El.class = "labelClass";
         h2El.textContent = stuffNameArray[i];
+
+
     }
 
     //  creat button to submit
@@ -206,6 +221,7 @@ function createStuff(event) { // Create function for Stuff
 /////////////////////////////////////////////////////
 btnSave.addEventListener("click", setData);
 
+
 function setData(event) {
     event.preventDefault();
 
@@ -220,20 +236,29 @@ function setData(event) {
 
     // console.log(checkUser);
     // let a = event.target.labelBox.checked;
-
-
-    pCach.getData(nameUser.value, phoneUser.value, emailUser.value, addressUser.value, cardUser.value, cashUser.value, checkUser.checked);
+    if(nameUser.value == "" || phoneUser.value == "" || emailUser.value == "" || addressUser.value =="" || cardUser.value == "" || cashUser.value == ""){
+        swal("Warning", "Please fill all feilds", "warning")
+    }else{
+        pCach.getData(nameUser.value, phoneUser.value, emailUser.value, addressUser.value, cardUser.value, cashUser.value, checkUser.checked);
 
     if (checkUser.checked !== true) {
         let liEl = document.createElement('li');
         ulElName.appendChild(liEl);
         liEl.textContent = nameUser.value;
+
+        liEl.class = 'userPrintName';
     }
 
     totalCash = totalCash +parseInt(cashUser.value) ;
     totalSpan.textContent = `Total Cash Donated : ${totalCash}`;
 
-    console.log(totalCash);
+    // console.log(totalCash);
+
+    swal("Good Job", "Thanks for your Donate, We will contact you urgently", 'success')
+
+    }
+
+    
 
 }
 
@@ -252,14 +277,24 @@ function setDataStuff(event) {
     // console.log(checkUser);
     // let a = event.target.labelBox.checked;
 
+    if(nameUser.value == "" || phoneUser.value == "" || emailUser.value == "" || addressUser.value =="" || cardUser.value == "" || cashUser.value == ""){
+        swal("Warning", "Please fill all feilds", "warning")
+    }else{
+        pCach.getDataStuff(nameUser.value, phoneUser.value, emailUser.value, addressUser.value, cardUser.value, cashUser.value, checkUser.checked);
 
-    pCach.getDataStuff(nameUser.value, phoneUser.value, emailUser.value, addressUser.value, cardUser.value, cashUser.value, checkUser.checked);
+        if (checkUser.checked !== true) {
+            let liEl = document.createElement('li');
+            ulElName.appendChild(liEl);
+            liEl.textContent = nameUser.value;
 
-    if (checkUser.checked !== true) {
-        let liEl = document.createElement('li');
-        ulElName.appendChild(liEl);
-        liEl.textContent = nameUser.value;
+            liEl.class = 'userPrintName';
+        }
+
+        swal("Good Job", "Thanks for your Donate, We will contact you urgently", 'success')
+
     }
+
+    
     
 }
 
@@ -275,6 +310,8 @@ function render() {
                 let liEl = document.createElement('li');
                 ulElName.appendChild(liEl);
                 liEl.textContent = CPrivate[i].name;
+
+                liEl.class = 'userPrintName';
             }
             totalCash = totalCash +parseInt(CPrivate[i].cash) ;
             totalSpan.textContent = `Total Cash Donated : ${totalCash}`;
@@ -294,6 +331,8 @@ function render() {
                 let liEl = document.createElement('li');
                 liEl.textContent = SPrivate[i].name;
                 ulElName.appendChild(liEl);
+
+                liEl.class = 'userPrintName';
 
             }
         }

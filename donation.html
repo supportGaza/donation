@@ -49,32 +49,32 @@
                 <section id="sec1">
                     <ul>
 
-                        <label for="data0">Name</label>
-                        <label for="data1">Phone</label>
-                        <label for="data2">Email</label>
-                        <label for="data3">Current Address</label>
-                        <label for="data4">Card Inforomation</label>
-                        <label for="data5">Cash Money</label>
-                        
+                        <label class="labelClass" for="data0">Name</label>
+                        <label class="labelClass" for="data1">Phone</label>
+                        <label class="labelClass" for="data2">Email</label>
+                        <label class="labelClass" for="data3">Current Address</label>
+                        <label class="labelClass" for="data4">Card Inforomation</label>
+                        <label class="labelClass" for="data5">Cash Money</label>
+
                     </ul>
 
                     <ul>
-                        <input type="text" name="name" id="data0">
-                        <input type="text" name="phone" id="data1">
-                        <input type="text" name="email" id="data2">
-                        <input type="text" name="address" id="data3">
-                        <input type="text" name="Card" id="data4">
-                        <input type="text" name="Cash" id="data5">
+                        <input class="infoClass" type="text" name="name" id="data0" required>
+                        <input type='number' class="infoClass" name="phone" id="data1" required>
+                        <input type="text" class="infoClass" name="email" id="data2" required>
+                        <input type="text" class="infoClass" name="address" id="data3" required>
+                        <input type="text" class="infoClass" name="Card" id="data4" required>
+                        <input type="number" class="infoClass" name="Cash" id="data5" required>
                     </ul>
                 </section>
 
 
                 <section id="sec2">
                     <input type="checkbox" name="labelBox" id="labelBox">
-                    
-                    <label for="labelBox">Donate as Private</label>
 
-                    <button id="btnSave" > Submit </button>
+                    <label id="checkLabel" for="labelBox">Donate as Private</label>
+
+                    <button id="btnSave"> Submit </button>
                 </section>
 
 
@@ -103,7 +103,7 @@
             <li><i class="fab fa-twitter"></i></li>
         </ul>
         <div id="pfooter">
-          <p >  <i class="far fa-copyright"></i> Copy right Donation For Gaza </p>
+            <p> <i class="far fa-copyright"></i> Copy right Donation For Gaza </p>
         </div>
         <ul class="ul">
             <span id="span3">Adress</span>
@@ -114,14 +114,15 @@
         </ul>
         <span id="span4">Links</span>
         <ul id="ul3">
-           
+
             <li><a href="index.html"> <i class="fas fa-home"></i>Home</a></li>
             <li><a href="donation.html"> <i class="fas fa-hand-holding-usd"></i>Donation</a></li>
             <li><a href="story.html"><i class="fas fa-warehouse"></i>Storys</a></li>
-            <li><a href="aboutus.html"> <i class="far fa-address-card"></i>About Us</a></li>  
-        </ul>    </footer>
+            <li><a href="aboutus.html"> <i class="far fa-address-card"></i>About Us</a></li>
+        </ul>
+    </footer>
 
-
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="js/app.js"></script>
     <script src="js/donation.js"></script>
 </body>

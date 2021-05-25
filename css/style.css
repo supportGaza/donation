@@ -1,120 +1,104 @@
-
-header{
+header {
   width: 100%;
-  height: 1000px;
-  background-image: url('../img/new1.png');
+  height: 880px;
+  background-image: url("../img/new1.png");
   background-repeat: no-repeat;
 }
-body{
-  background-color: #fbfbfd;
+body {
+  background-color: #e7e7f3;
+  overflow-x: hidden;
 }
-nav{
+nav {
   float: left;
-  margin-top: 20px;
+  margin-top: 33px;
+
+  width: 1116px;
+  height: 71px;
 }
-#logo{
-  margin-top: 35px;
-  position: absolute;
-  margin-left: 54px;
-  font-size: 27px;
-  color: rgb(247, 234, 212);
-  font-family: 'Lobster', cursive;
-}
-#call{
-  float: right;
-  margin-top: 13px;
-  margin-right: 10px;
-  color: rgb(218 206 201);
-  font-size: 16px;
-  border: 1px solid;
-  padding: 10px;
-  background-color: #8b2b01;
-}
-#call:hover{
-color: white;
-background-color: orangered;
-}
-nav ul li{
+
+nav ul li {
   display: inline-block;
   padding-left: 0px;
-  margin-top: 0px;
-  margin-left: 139px;
+  margin-top: 19px;
+  margin-left: 104px;
 }
-nav ul li a i{
-margin-right: 10px;
+nav ul li a i {
+  margin-right: 10px;
 }
-ul{
+ul {
   margin-left: 110px;
 }
-nav ul li a{
+nav ul li a {
   text-decoration: none;
-  color: rgb(247, 234, 212);
-  font-size: 18px;
-  
+  color: white;
+  font-size: 23px;
 }
-nav ul li a:hover{
-color: white;
-background-color:black;
-padding: 20px;
-
+nav ul li a:hover {
+  color: black;
+  background-color: rgb(209, 136, 109);
+  padding: 20px;
+  border-bottom: 7px solid white;
+  font-size: 25;
 }
-.one img{
-  width: 50px;
+.one img {
+  width: 162px;
   margin-top: 7px;
-  height: 77px;
-  opacity: .7;
+  height: 180px;
+
   float: left;
 }
 
-.one{
+.one {
   margin-left: 20px;
 }
-.two{
+.two {
   position: absolute;
   width: 404px;
-  margin-top: -691px;
-  color: rgb(214, 202, 202);
-  margin-left: 78px;
+  margin-top: -609px;
+  color: rgb(251 242 242);
+  margin-left: 61px;
   line-height: 33px;
   font-size: 21px;
 }
-h3{
+h3 {
   font-size: 37px;
   margin-bottom: 20px;
-  font-family: 'Cinzel', serif;
+  font-family: "Cinzel", serif;
   font-weight: bolder;
 }
 
-.button{
+.button {
   text-decoration: none;
   padding: 14px;
   width: 182px;
   margin-top: 9px;
-  color: rgb(175, 69, 27);
+  color: rgb(253, 247, 244);
+
   font-size: 20px;
-  background-color: #848385;
+
+  background-color: orangered;
   font-weight: bold;
 }
-.button:hover{
-color: white;
-background-color: orangered;
+.button:hover {
+  color: orangered;
+  background-color: white;
 }
-.two p{
+.two p {
   margin-bottom: 20px;
 }
-section{
-    width: 1350px;;
-  height: 730px;
+section {
+  width: 1350px;
+  height: 650px;
 }
 
 #slideshow {
   overflow: hidden;
   height: 510px;
   width: 613px;
-  
   margin-top: 34px;
   margin-left: 60px;
   float: left;
+  border: 2px solid black;
 }
 .slide-wrapper {
   width: 2912px;
@@ -146,129 +130,146 @@ section{
   font-size: 10em;
 }
 @-webkit-keyframes slide {
-  20% {margin-left: 0px;}
-  30% {margin-left: -728px;}
-  50% {margin-left: -728px;}
-  60% {margin-left: -1456px;}
-  70% {margin-left: -1456px;}
-  80% {margin-left: -2184px;}
-  90% {margin-left: -2184px;}
+  20% {
+    margin-left: 0px;
+  }
+  30% {
+    margin-left: -728px;
+  }
+  50% {
+    margin-left: -728px;
+  }
+  60% {
+    margin-left: -1456px;
+  }
+  70% {
+    margin-left: -1456px;
+  }
+  80% {
+    margin-left: -2184px;
+  }
+  90% {
+    margin-left: -2184px;
+  }
 }
-#p{
+#p {
   float: left;
-  margin-left: 783px;
-  margin-top:-451px;
+  margin-left: 705px;
+  margin-top: -514px;
   line-height: 56px;
   font-size: 17px;
   font-weight: bold;
   text-align: justify;
-/*  font-family: 'Cinzel', serif;*/
-  color: #c33838;
+  /* font-family: 'Cinzel', serif; */
+  color: #716262;
   margin-right: 111px;
-  width: 503px;
+  width: 543px;
+  border: 2px dotted gray;
+  padding: 45px;
+  height: 420px;
 }
-h2{
+h2 {
   float: left;
-  margin-left: 783px;
+  margin-left: 748px;
   margin-top: -514px;
   line-height: 56px;
-  font-size: 28px;
+  font-size: 26px;
   font-weight: bolder;
   text-align: justify;
-  color: #c50f0f;
+  color: #ad1244;
   margin-right: 111px;
   width: 503px;
 }
-.animatedBox{
-text-decoration: none;
+.animatedBox {
+  text-decoration: none;
   padding: 20px;
   width: 182px;
-  margin-top: 363px;
+  margin-top: 385px;
   color: rgb(206, 23, 10);
-  font-size: 35px;
-  
+  font-size: 39px;
   font-weight: bold;
   position: absolute;
-  margin-left: 110px;
+  margin-left: 262px;
   text-align: center;
   border: 0px solid rgb(241 230 230);
-  animation: myAnimation 6s linear 1s 1 forwards;
+  animation: heartbeat1 2s linear 1s 1 forwards;
   animation-iteration-count: infinite;
+  border: 2px solid;
 }
-@keyframes myAnimation {
-50% {
-  border: 60px solid rgb(155, 111, 95);
-}}
-
-.animatedBox:hover{
-  
-  background-color: rgb(144, 170, 170);
+@keyframes heartbeat1 {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.5);
+  }
 }
 
-footer{
+.animatedBox:hover {
+  background-color: rgb(12, 19, 19);
+}
+
+footer {
   background-color: #1b1a1a;
   height: 400px;
-  
 }
 
 footer ul li {
-  
   color: white;
   margin-left: 967px;
   font-size: 25px;
   padding: 0px;
   margin-top: 39px;
 }
-#span2{
-color: white;
-float: right;
-margin-top: 23px;
-font-size: 23px;
-margin-right: 207px;
-margin-bottom: 20px;
+#span2 {
+  color: white;
+  float: right;
+  margin-top: 23px;
+  font-size: 23px;
+  margin-right: 207px;
+  margin-bottom: 20px;
 }
-#pfooter{
-background-color: gray;
-margin-top: 36px;
-height: 78px;
-text-align: center;
-color: white;
+#pfooter {
+  background-color: gray;
+  margin-top: 36px;
+  height: 78px;
+  text-align: center;
+  color: white;
 }
-#pfooter p{
-padding: 33px;
+#pfooter p {
+  padding: 33px;
 }
-.ul{
-color: white;
-margin-top: -392px;
-margin-left: -374px;
+.ul {
+  color: white;
+  margin-top: -392px;
+  margin-left: -374px;
 }
-#span3{
-color: white;
+#span3 {
+  color: white;
   float: right;
   margin-top: -25px;
   font-size: 25px;
   margin-right: 386px;
   margin-bottom: 20px;
 }
-#ul3{
-margin-left: -785px;
+#ul3 {
+  margin-left: -785px;
   margin-top: -270px;
 }
-#ul3 li a{
-text-decoration: none;
-color: white;
+#ul3 li a {
+  text-decoration: none;
+  color: white;
 }
-#span4{
-color: white;
+#span4 {
+  color: white;
   float: left;
   margin-top: -272px;
   margin-left: 192px;
   font-size: 26px;
 }
-footer ul li:hover{
-
-color: #c50f0f;
+footer ul li:hover {
+  color: #c50f0f;
 }
-#ul3 li a:hover{
-color: #c50f0f;
+#ul3 li a:hover {
+  color: #c50f0f;
 }

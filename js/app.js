@@ -61,4 +61,3 @@ const CallStuff = function (name, phone, email, address, card, cash, check) {
 }
 
 CallStuff.cashDataArrayStuff = [];
-
