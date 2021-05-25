@@ -240,14 +240,14 @@ color: #c50f0f;
   color: black;
   margin-top: 16px;
 }
-.flip-card:hover #img {
+/* .flip-card:hover #img {
   transform: rotateY(180deg);
-}
+} */
 #text{
   
   line-height: 56px;
-  font-size: 20px;
-  font-family: 'Anton', sans-serif;
+    font-size: 20px;
+    font-family: 'El Messiri', sans-serif;
 }
 #mager{
   line-height: 66px;
