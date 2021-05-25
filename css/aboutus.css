@@ -28,7 +28,8 @@ nav ul li{
   display: inline-block;
   padding-left: 0px;
   margin-top: 20px;
-  margin-left: 110px;
+  margin-left: 60px;
+
 }
 nav ul li a i{
 margin-right: 10px;
@@ -39,13 +40,14 @@ nav ul li a{
   text-decoration: none;
   color: #f9f1f1;
   font-size: 23px;
+  padding: 20px;
 }
 nav ul li a:hover{
 color:black;
 background-color: rgb(199, 203, 247);
-padding: 20px;
+
 border-bottom: 7px solid white;
-font-size:24 ;
+
 line-height: 20px;
 
 }
@@ -53,7 +55,7 @@ line-height: 20px;
   width: 162px;
   margin-top: 7px;
   height: 180px;
-  /* opacity: .7; */
+  
   float: left;
 }
 
@@ -66,7 +68,7 @@ line-height: 20px;
   padding: 10px;
   /* border: 3px solid rgb(96, 96, 142); */
   border-radius: 50px;
-  /* background: wheat; */
+  
   margin-top: 264px;
   margin-left: 42px;
   text-align: center;
@@ -104,7 +106,7 @@ line-height: 20px;
   height: 200px;
   padding: 10px;
   border-radius: 50px;
-  /* margin: 20px; */
+
   text-align: center;
   margin-top: -267px;
   margin-left: 57px;}
@@ -115,7 +117,7 @@ line-height: 20px;
 
   background-image: url("../img/Palasstine.png");
   border-radius: 30px;
-  /* border: 1px solid green; */
+  
   display: inline-block;
 }
 #imgslide div img{
@@ -171,7 +173,7 @@ padding: 33px;
   float: right;
   margin-top: -60px;
   font-size: 25px;
-  margin-right: 386px;
+  margin-right: 346px;
   margin-bottom: 20px;
 }
 #ul3{
@@ -240,9 +242,6 @@ color: #c50f0f;
   color: black;
   margin-top: 16px;
 }
-/* .flip-card:hover #img {
-  transform: rotateY(180deg);
-} */
 #text{
   
   line-height: 56px;
@@ -275,7 +274,4 @@ color: #c50f0f;
 section{
   width: 1350px;;
   height: 650px;
-}
-.containerdiv{
-
 }

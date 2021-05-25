@@ -254,7 +254,7 @@ function setData(event) {
 
     // console.log(totalCash);
 
-    swal("Good Job", "Thanks for your Donate, We will contact you urgently", 'success')
+    swal("Thanks for your Donate", "We will contact you shortly", 'success')      // change the aleart 
 
     }
 
