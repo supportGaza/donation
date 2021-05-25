@@ -103,7 +103,7 @@ body{
 .video{
   width: 516px;
   height: 358px;
-  border-radius: 6%;
+  border-radius: 5%;
 }
  h2{
   margin-top: 20px;
@@ -213,8 +213,5 @@ color: #c50f0f;
     margin-left: 919px;
     margin-top: 20px;
 }
-
-
-
 
 
