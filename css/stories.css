@@ -25,7 +25,7 @@ nav ul li a i{
 margin-right: 10px;
 }
 ul{
-  margin-left: 4px;
+  margin-left: 108px;
   margin-top: 33px;
 }
 nav ul li a{
@@ -157,14 +157,14 @@ footer ul li {
   padding: 0px;
   margin-top: 39px;
 }
-#span2{
-color: white;
-float: right;
-margin-top: 23px;
-font-size: 23px;
-margin-right: 207px;
-margin-bottom: 20px;
-}
+/*#span2{
+  color: white;
+  float: right;
+  margin-top: -57px;
+  font-size: 23px;
+  margin-right: 207px;
+  margin-bottom: 103px;
+}*/
 #pfooter{
 background-color: gray;
 margin-top: 36px;
@@ -176,17 +176,19 @@ color: white;
 padding: 33px;
 }
 .ul{
-color: white;
-margin-top: -392px;
-margin-left: -374px;
+  color: white;
+  margin-top: -356px;
+  margin-left: -374px;
+
 }
 #span3{
-color: white;
+  color: white;
   float: right;
-  margin-top: -25px;
+  margin-top: -46px;
   font-size: 25px;
-  margin-right: 386px;
+  margin-right: 655px;
   margin-bottom: 20px;
+
 }
 #ul3{
 margin-left: -785px;
@@ -210,7 +212,13 @@ color: #c50f0f;
 #ul3 li a:hover{
 color: #c50f0f;
 }
-
+#p{
+  color: white;
+    font-size: 24px;
+    position: absolute;
+    margin-left: 919px;
+    margin-top: 20px;
+}
 
 
 
