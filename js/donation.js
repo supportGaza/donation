@@ -8,6 +8,7 @@ let totalSpan = document.getElementById('totalSpan');
 
 let right = document.getElementById('right');
 let ulElName = document.createElement('ul');
+ulElName.id = 'namesList';
 right.appendChild(ulElName);
 
 
@@ -63,6 +64,7 @@ function createCash(event) { // Create function for cash
     for (let i = 0; i < num; i++) {  // Input  Text
         inputData = document.createElement('input');
         inputData.type = "text";
+        inputData.class = "infoClass";
         inputData.id = `data${i}`;
 
         ulElRight.appendChild(inputData);
@@ -80,6 +82,7 @@ function createCash(event) { // Create function for cash
         h2El.setAttribute("for", `data${i}`);
         ulElLeft.appendChild(h2El);
 
+        h2El.class = "labelClass";
         h2El.textContent = cashNameArray[i];
     }
 
@@ -157,6 +160,7 @@ function createStuff(event) { // Create function for Stuff
         inputData.type = "text";
         inputData.id = `data${i}`;
 
+        inputData.class = "infoClass";
         ulElRight.appendChild(inputData);
 
     }
@@ -170,7 +174,10 @@ function createStuff(event) { // Create function for Stuff
         h2El.setAttribute("for", `data${i}`);
         ulElLeft.appendChild(h2El);
 
+        h2El.class = "labelClass";
         h2El.textContent = stuffNameArray[i];
+
+
     }
 
     //  creat button to submit
@@ -238,6 +245,8 @@ function setData(event) {
         let liEl = document.createElement('li');
         ulElName.appendChild(liEl);
         liEl.textContent = nameUser.value;
+
+        liEl.class = 'userPrintName';
     }
 
     totalCash = totalCash +parseInt(cashUser.value) ;
@@ -277,6 +286,11 @@ function setDataStuff(event) {
             let liEl = document.createElement('li');
             ulElName.appendChild(liEl);
             liEl.textContent = nameUser.value;
+<<<<<<< HEAD
+=======
+
+            liEl.class = 'userPrintName';
+>>>>>>> 32e7238af9d7f466c9fe0959180e4ebd8a1cf908
         }
 
         swal("Good Job", "Thanks for your Donate, We will contact you urgently", 'success')
@@ -299,6 +313,8 @@ function render() {
                 let liEl = document.createElement('li');
                 ulElName.appendChild(liEl);
                 liEl.textContent = CPrivate[i].name;
+
+                liEl.class = 'userPrintName';
             }
             totalCash = totalCash +parseInt(CPrivate[i].cash) ;
             totalSpan.textContent = `Total Cash Donated : ${totalCash}`;
@@ -318,6 +334,8 @@ function render() {
                 let liEl = document.createElement('li');
                 liEl.textContent = SPrivate[i].name;
                 ulElName.appendChild(liEl);
+
+                liEl.class = 'userPrintName';
 
             }
         }
