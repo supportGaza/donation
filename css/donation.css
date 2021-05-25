@@ -25,7 +25,8 @@ h1{
     border-bottom-right-radius: 75%;
 }
 nav{
-    
+    float: left;
+  margin-top: 39px;
     text-align: center;
     /* padding-left: 15px; */
 }
