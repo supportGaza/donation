@@ -20,7 +20,7 @@ nav ul li {
   display: inline-block;
   padding-left: 0px;
   margin-top: 19px;
-  margin-left: 104px;
+  margin-left: 60px;
 }
 nav ul li a i {
   margin-right: 10px;
@@ -32,6 +32,16 @@ nav ul li a {
   text-decoration: none;
   color: white;
   font-size: 23px;
+
+  padding: 20px;
+}
+nav ul li a:hover{
+color:black;
+background-color: rgb(209, 136, 109);
+
+border-bottom: 7px solid white;
+
+
 }
 nav ul li a:hover {
   color: black;
@@ -39,6 +49,7 @@ nav ul li a:hover {
   padding: 20px;
   border-bottom: 7px solid white;
   font-size: 25;
+
 }
 .one img {
   width: 162px;
@@ -249,7 +260,7 @@ footer ul li {
   float: right;
   margin-top: -25px;
   font-size: 25px;
-  margin-right: 386px;
+  margin-right: 346px;
   margin-bottom: 20px;
 }
 #ul3 {
