@@ -113,7 +113,7 @@ function showImgstdu3(event) {
 
     imgteam.setAttribute("src", "img/Ghaida.png");
     parghraph.textContent = "Ghaidaa mohammad Al-nattah";
-    magerText.textContent = "management  information system";
+    magerText.textContent = "management  information system At philadelphia ";
     GithubLink.setAttribute("href", "https://github.com/Ghaidaamoh");
     GithubLink.textContent = "GitHub";
     linkedinLink.setAttribute("href", "https://www.linkedin.com/in/ghaidaa-mohammad");
