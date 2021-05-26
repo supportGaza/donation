@@ -11,7 +11,6 @@ let imgstu3 = document.getElementById("gahidaa");
 let imgstu4 = document.getElementById("mohmmad");
 let imgstu5 = document.getElementById("alla");
 
-// fun erada
 imgstu1.addEventListener("click", showImgstdu1);
 
 function showImgstdu1(event) {
