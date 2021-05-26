@@ -247,6 +247,12 @@ function setData(event) {
         liEl.textContent = nameUser.value;
 
         liEl.class = 'userPrintName';
+    }else{
+        let liEl = document.createElement('li');
+        ulElName.appendChild(liEl);
+        liEl.textContent = "philanthropist";
+
+        liEl.class = 'userPrintName';
     }
 
     totalCash = totalCash +parseInt(cashUser.value) ;
@@ -258,8 +264,12 @@ function setData(event) {
 
     }
 
-    
-
+    nameUser.value = "";
+    phoneUser.value = "";
+    emailUser.value = "";
+    addressUser.value = "";
+    cardUser.value = "";
+    cashUser.value = "";
 }
 
 function setDataStuff(event) {
@@ -288,13 +298,24 @@ function setDataStuff(event) {
             liEl.textContent = nameUser.value;
 
             liEl.class = 'userPrintName';
+        }else{
+            let liEl = document.createElement('li');
+            ulElName.appendChild(liEl);
+            liEl.textContent = "philanthropist";
+
+            liEl.class = 'userPrintName';
         }
 
         swal("Good Job", "Thanks for your Donate, We will contact you urgently", 'success')
 
     }
 
-    
+    nameUser.value = "";
+    phoneUser.value = "";
+    emailUser.value = "";
+    addressUser.value = "";
+    cardUser.value = "";
+    cashUser.value = "";
     
 }
 
