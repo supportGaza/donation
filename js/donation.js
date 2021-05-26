@@ -33,12 +33,14 @@ btnCash.addEventListener('click', createCash);
 btnStuff.addEventListener('click', createStuff);
 
 
-
+btnCash.style.background="#c95b73";
+//btnCash.style.opacity=".65";
 function createCash(event) { // Create function for cash
 
     event.preventDefault();
 
-
+btnCash.style.background="#c95b73";
+btnStuff.style.background="rgb(203 203 193)";
     // remove old View
     let sec1 = document.getElementById("sec1");
     let sec2 = document.getElementById("sec2");
@@ -131,7 +133,8 @@ function createStuff(event) { // Create function for Stuff
 
     event.preventDefault();
 
-
+   btnStuff.style.background="#c95b73";
+   btnCash.style.background="rgb(203 203 193)";
     // remove old View
     let sec1 = document.getElementById("sec1");
     let sec2 = document.getElementById("sec2");
@@ -321,6 +324,12 @@ function setDataStuff(event) {
 
 function render() {
     let CPrivate = JSON.parse(localStorage.getItem("CPrivate"));
+
+    pCach.getData("Erada ali", "079", "erada.abdalrhman@gmail.com", "Swailh", "8888", "1000", "false");
+    pCach.getData("Alaa Smadi", "079", "alaasmadi1010@gmail.com", "Ajloun", "8888", "1000", "false");
+    pCach.getData("Mohammad Atta", "079", "mohammadatta97@gmail.com", "Amman", "8888", "1000", "false");
+    pCach.getData("Ghaidaa Mohammad", "079", "ghaidaa97mohammad@gmail.com", "Amman", "8888", "1000", "false");
+    pCach.getData("Suad Talafh", "079", "suad.talafh@gmail.com", "Amman", "8888", "1000", "false");
 
     if (CPrivate == null || CPrivate == undefined) {
         totalSpan.textContent = `Total Cash Donated : ${0}`;

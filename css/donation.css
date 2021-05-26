@@ -141,13 +141,13 @@ input{
     display: block;
 }
 section ul{
-    float: left;
-    /* text-align: center; */
-    padding-right: 25px;
-    width: 48%;
-    height: 200px;
-    border: 1px solid gray;
-    background-color: #cfd0c0;
+  float: left;
+  text-align: left;
+  padding-left: 20px;
+  width: 48%;
+  height: 200px;
+  border: 1px solid gray;
+  background-color: #cfd0c0;
 }
 ul label{
     display: block;
