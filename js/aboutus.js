@@ -16,12 +16,14 @@ let test;
 newimg.id = ('img55');
 newimg1.appendChild(newimg);
 
+
 let newimg2 = document.createElement('img');
 let newimg3 = document.getElementById('Ghaidaa');
 let test1;
 newimg2.id = ('img5');
 newimg3.appendChild(newimg2);
 // fun erada
+
 imgstu1.addEventListener("click", showImgstdu1);
 
 function showImgstdu1(event) {
