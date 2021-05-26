@@ -129,74 +129,79 @@ line-height: 20px;
   opacity: 0.7;
 }
 
-footer{
+footer {
   background-color: #1b1a1a;
-  height: 380px;
-  margin-top: 150px;
+  height: 250px;
+  margin-top: 126px;
 }
 
 footer ul li {
-  
   color: white;
-    margin-left: 967px;
-    font-size: 25px;
-    padding: 0px;
-    margin-top: 37px;
+  margin-left: 967px;
+  font-size: 15px;
+  padding: 0px;
+  margin-top: 32px;
 }
-#span2{
-  color: white;
-  float: right;
-  margin-top: 18px;
-  font-size: 23px;
-  margin-right: 207px;
-  margin-bottom: 44px;
-}
-#pfooter{
-  background-color: gray;
-    margin-top: 6px;
-    height: 90px;
-    text-align: center;
-    color: white;
-}
-#pfooter p{
-padding: 33px;
-}
-.ul{
-  color: white;
-  margin-top: -353px;
-  margin-left: -374px;
-
-}
-#span3{
+#span2 {
   color: white;
   float: right;
-  margin-top: -60px;
-  font-size: 25px;
-  margin-right: 346px;
+  margin-top: 23px;
+  font-size: 19px;
+  margin-right: 217px;
   margin-bottom: 20px;
 }
-#ul3{
-  margin-left: -785px;
-  margin-top: -260px;
+#pfooter {
+  background-color: gray;
+  margin-top: -3px;
+  height: 78px;
+  text-align: center;
+  color: white;
 
 }
-#ul3 li a{
-text-decoration: none;
-color: white;
+#pfooter p {
+  padding: 33px;
 }
-#span4{
-color: white;
+.ul {
+  color: white;
+  margin-top: -289px;
+  margin-left: -374px;
   float: left;
-  margin-top:-275px;
-  margin-left: 192px;
-  font-size: 26px;
 }
-footer ul li:hover{
+#span3 {
+  color: white;
+    float: right;
+    margin-top: -295px;
+    font-size: 19px;
+    margin-right: 678px;
+    margin-bottom: 12px;
 
-color: #c50f0f;
 }
-#ul3 li a:hover{
-color: #c50f0f;
+#ul3 {
+  margin-left: -785px;
+  margin-top: -290px;
+  float: left;
+
+}
+#ul3 li a {
+  text-decoration: none;
+  color: white;
+}
+#span4 {
+  color: white;
+  float: left;
+  margin-top: -298px;
+  margin-left: 198px;
+  font-size: 19px;
+}
+footer ul li:hover {
+  color: #c50f0f;
+}
+#ul3 li a:hover {
+  color: #c50f0f;
+}
+#ulfollow li{
+  margin-top: 20px;
+  padding: 9px;
 }
 #movingdiv{
   float: left;
