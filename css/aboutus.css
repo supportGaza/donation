@@ -130,7 +130,7 @@ line-height: 20px;
 
 footer{
   background-color: #1b1a1a;
-  height: 416px;
+  height: 380px;
   margin-top: 150px;
 }
 
@@ -145,26 +145,24 @@ footer ul li {
 #span2{
   color: white;
   float: right;
-  margin-top: 68px;
+  margin-top: 18px;
   font-size: 23px;
   margin-right: 207px;
-  margin-bottom: 44px
+  margin-bottom: 44px;
 }
 #pfooter{
   background-color: gray;
-  margin-top: 66px;
-  height: 78px;
-  text-align: center;
-  color: white;
-
+    margin-top: 6px;
+    height: 90px;
+    text-align: center;
+    color: white;
 }
-
 #pfooter p{
 padding: 33px;
 }
 .ul{
   color: white;
-  margin-top: -403px;
+  margin-top: -353px;
   margin-left: -374px;
 
 }

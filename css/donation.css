@@ -64,11 +64,12 @@ header{
     display: inline-block;
     padding: 20px;
     background-color: rgb(203 203 193);
-    border-radius: 52%;
-    
+    border-radius: 10px;
+    border: none;
+    opacity: .8;
 }
 button:hover{
-    background-color: rgb(206, 140, 17);
+    background-color:#c95b73;;
     
 }
 button p{
@@ -79,7 +80,7 @@ button p{
 #left{
     margin-right: 65px;
     float: left;
-    border: 3px solid gray;
+  border-radius: 20px;
     height: 500px;
     width: 42%;
     margin-left: 150px;
@@ -96,7 +97,7 @@ button p{
     width: 32%;
     margin-top: -120px;
     overflow: auto;
-    border: 3px solid gray;
+    border-radius: 20px;
     background-image: url('https://i.pinimg.com/originals/8e/91/a3/8e91a34b716d9114fb2e3b32239bfa1d.jpg');
 }
 section{
@@ -119,6 +120,7 @@ section{
     float: left;
     height: 200px;
     margin-left: 12px;
+    opacity: .6;
 }
 #sec2{
     width: 100%;
@@ -153,18 +155,18 @@ ul label{
 }
 
 #totalSpan{
-    margin-left: 20px;
-    font-size: 32px;
-    color: #f7ecee;
-    background-color: #ad1212;
+  margin-left: 20px;
+  font-size: 32px;
+  color: #f7ecee;
+  background-color: #c95b73;
 }
 #namesList{
-    
-    margin-left: 23px;
-    margin-top: 20px;
-    font-size: 20px;
-    color: red;
-    background-color: #e7e7f3;
+  margin-left: 23px;
+  margin-top: 20px;
+  font-size: 20px;
+  color: red;
+  background-color: #e7e7f3;
+  opacity: .8;
 }
 #movingdiv{
     float: left;
@@ -198,9 +200,9 @@ ul label{
 
   
 footer{
-    background-color: #1b1a1a;
-    height: 400px;
-    margin-top: 604px;
+  background-color: rgb(27, 26, 26);
+  height: 325px;
+  margin-top: 604px;
   }
   
   footer ul li {
@@ -221,7 +223,7 @@ footer{
   }
   #pfooter{
     background-color: gray;
-    margin-top: 88px;
+    margin-top: 18px;
     height: 76px;
     text-align: center;
     color: white;
@@ -231,13 +233,13 @@ footer{
   }
   .ul{
     color: white;
-    margin-top: -426px;
+    margin-top: -360px;
     margin-left: -374px;
   }
   #span3{
     color: white;
     float: right;
-    margin-top: -449px;
+    margin-top: -377px;
     font-size: 25px;
     margin-right: 646px;
     margin-bottom: 20px;
@@ -252,9 +254,9 @@ footer{
   color: white;
   }
   #span4{
-       color: white;
+    color: white;
     float: left;
-    margin-top: -452px;
+    margin-top: -377px;
     margin-left: 192px;
     font-size: 26px;
 }
