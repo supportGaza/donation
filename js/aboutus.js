@@ -48,7 +48,7 @@ function showImgstdu1(event) {
     imgteam.setAttribute("src", "img/Erada.png");
 
     parghraph.textContent = "Erada Abdalrhman Ali";
-    magerText.textContent = "Computer Science  from Balqa Applied University";
+    magerText.textContent = "Computer Science  at Balqa Applied University";
     GithubLink.setAttribute("href", "https://github.com/eradaali");
     GithubLink.textContent = "GitHub";
     linkedinLink.setAttribute("href", "https://www.linkedin.com/in/erada-ali-54b8901b9");
@@ -80,7 +80,7 @@ function showImgstdu2(event) {
     imgteam.setAttribute("src", "img/Suad.png");
 
     parghraph.textContent = "Suad Husam Talafha";
-    magerText.textContent = "Renewable Energy Engineer  from Al Albayt University";
+    magerText.textContent = "Renewable Energy Engineer  at Al Albayt University";
     GithubLink.setAttribute("href", "https://github.com/suadtalafha");
     GithubLink.textContent = "GitHub";
     linkedinLink.setAttribute("href", "https://github.com/suadtalafha");
@@ -113,7 +113,7 @@ function showImgstdu3(event) {
 
     imgteam.setAttribute("src", "img/Ghaida.png");
     parghraph.textContent = "Ghaidaa mohammad Al-nattah";
-    magerText.textContent = "management  information system  from philadelphia ";
+    magerText.textContent = "management  information system  at philadelphia ";
     GithubLink.setAttribute("href", "https://github.com/Ghaidaamoh");
     GithubLink.textContent = "GitHub";
     linkedinLink.setAttribute("href", "https://www.linkedin.com/in/ghaidaa-mohammad");
@@ -145,7 +145,7 @@ function showImgstdu4(event) {
 
     imgteam.setAttribute("src", "img/Mohammad.png");
     parghraph.textContent = "Mohammad Omar Atta";
-    magerText.textContent = "Electrical Power Engineer  from Balqa Applied University";
+    magerText.textContent = "Electrical Power Engineer  at Balqa Applied University";
     GithubLink.setAttribute("href", "https://github.com/mr-atta");
     GithubLink.textContent = "GitHub";
     linkedinLink.setAttribute("href", "www.linkedin.com/in/mohammad-atta-96b5711b2");
@@ -176,7 +176,7 @@ function showImgstdu5(event) {
 
     imgteam.setAttribute("src", "img/Alaa.png");
     parghraph.textContent = "Alaa Nasser Al Smadi";
-    magerText.textContent = "Survey Engineering  from Balqa Applied University";
+    magerText.textContent = "Survey Engineering  at Balqa Applied University";
     GithubLink.setAttribute("href", " https://github.com/AlaaN-Smadi");
     GithubLink.textContent = "GitHub";
     linkedinLink.setAttribute("href", "www.linkedin.com/in/alaa-smadi-a9b17a210");
