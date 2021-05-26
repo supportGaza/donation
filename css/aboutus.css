@@ -84,7 +84,8 @@ line-height: 20px;
   border-radius: 15px;
   margin-left: 124px;
   margin-top: 15px;
-  background-color: #f1f8fe;;
+  background-color: #f1f8fe;
+  
 }
 #img{
   float: left;
@@ -246,10 +247,9 @@ footer ul li:hover {
   margin-top: 16px;
 }
 #text{
-  
   line-height: 56px;
     font-size: 20px;
-    font-family: 'El Messiri', sans-serif;
+    font-family: 'Anton', sans-serif;
 }
 #mager{
   line-height: 66px;
