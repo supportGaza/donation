@@ -11,35 +11,36 @@ body{
 }
 nav{
   float: left;
-  margin-top: 20px;
+  margin-top: -145px;
 }
 
 
 nav ul li{
   display: inline-block;
-  padding-left: 0px;
-  margin-top: 0px;
+ 
   margin-left: 139px;
 }
+
 nav ul li a i{
 margin-right: 10px;
 }
 ul{
-  margin-left: 4px;
+  margin-left: 108px;
   margin-top: 33px;
 }
 nav ul li a{
   text-decoration: none;
   color: white;
   font-size: 20px;
-  
+  padding: 20px;
 }
 nav ul li a:hover{
 color:black;
 background-color: rgb(224, 188, 174);
-padding: 20px;
+/*padding: 20px;*/
+
+/*font-size: 25;*/
 border-bottom: 7px solid white;
-font-size: 25;
 }
 .one img{
   width: 162px;
@@ -102,7 +103,7 @@ body{
 .video{
   width: 516px;
   height: 358px;
-  border-radius: 10%;
+  border-radius: 5%;
 }
  h2{
   margin-top: 20px;
@@ -157,14 +158,7 @@ footer ul li {
   padding: 0px;
   margin-top: 39px;
 }
-#span2{
-color: white;
-float: right;
-margin-top: 23px;
-font-size: 23px;
-margin-right: 207px;
-margin-bottom: 20px;
-}
+
 #pfooter{
 background-color: gray;
 margin-top: 36px;
@@ -176,17 +170,19 @@ color: white;
 padding: 33px;
 }
 .ul{
-color: white;
-margin-top: -392px;
-margin-left: -374px;
+  color: white;
+  margin-top: -356px;
+  margin-left: -374px;
+
 }
 #span3{
-color: white;
+  color: white;
   float: right;
-  margin-top: -25px;
+  margin-top: -46px;
   font-size: 25px;
-  margin-right: 386px;
+  margin-right: 655px;
   margin-bottom: 20px;
+
 }
 #ul3{
 margin-left: -785px;
@@ -210,9 +206,12 @@ color: #c50f0f;
 #ul3 li a:hover{
 color: #c50f0f;
 }
-
-
-
-
+#p{
+  color: white;
+    font-size: 24px;
+    position: absolute;
+    margin-left: 919px;
+    margin-top: 20px;
+}
 
 
