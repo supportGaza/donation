@@ -1,18 +1,18 @@
-*{
+* {
   box-sizing: border-box;
 }
-header{
+header {
   width: 100%;
   height: 600px;
-  background-image: url('../img/new3.jpg');
+  background-image: url("../img/new3.jpg");
   background-repeat: no-repeat;
 }
-body{
+body {
   background-color: #e7e7f3;
 
   overflow-x: hidden;
 }
-nav{
+nav {
   float: left;
   margin-top: 39px;
   position: sticky;
@@ -20,62 +20,70 @@ nav{
   background-color: #1a2c35;
   height: 73px;
   width: 1154px;
-  opacity: .9;
+  opacity: 0.7;
 }
 
-
-nav ul li{
+nav ul li {
   display: inline-block;
   padding-left: 0px;
   margin-top: 20px;
   margin-left: 60px;
-
 }
-nav ul li a i{
-margin-right: 10px;
+nav ul li a i {
+  margin-right: 10px;
 }
-ul{
-  margin-left: 116px;}
-nav ul li a{
+ul {
+  margin-left: 116px;
+}
+nav ul li a {
   text-decoration: none;
   color: #f9f1f1;
   font-size: 23px;
   padding: 20px;
 }
-nav ul li a:hover{
-color:black;
-background-color: rgb(199, 203, 247);
+nav ul li a:hover {
+  color: black;
+  background-color: rgb(199, 203, 247);
 
-border-bottom: 7px solid white;
+  border-bottom: 7px solid white;
 
-line-height: 20px;
-
+  line-height: 20px;
 }
-.one img{
+.one img {
   width: 162px;
   margin-top: 7px;
   height: 180px;
-  
+
   float: left;
 }
 
-.one{
+.one {
   margin-left: 20px;
 }
-#containerDescription{
+#containerDescription {
   width: 95%;
   height: 689px;
   padding: 10px;
   /* border: 3px solid rgb(96, 96, 142); */
   border-radius: 50px;
-  
+
   margin-top: 264px;
   margin-left: 42px;
   text-align: center;
   border: 2px dotted;
-  background: linear-gradient(to  right, #022e02 0%,#022e02 32%,black 30%,black 30%,#81080a 33%,#7a080a 66%,white 67%,white 67%);
+  background: linear-gradient(
+    to right,
+    #022e02 0%,
+    #022e02 32%,
+    black 30%,
+    black 30%,
+    #81080a 33%,
+    #7a080a 66%,
+    white 67%,
+    white 67%
+  );
 }
-#abouttext{
+#abouttext {
   float: left;
   width: 411px;
   border: 5px solid rgb(146 146 162);
@@ -85,9 +93,8 @@ line-height: 20px;
   margin-left: 124px;
   margin-top: 15px;
   background-color: #f1f8fe;
-  
 }
-#img{
+#img {
   float: left;
   width: 350px;
   /* border: 1px solid green; */
@@ -95,14 +102,13 @@ line-height: 20px;
   border-radius: 15px;
   padding: 5px;
   margin-left: 25px;
-
 }
-#img img{
-  width:340px ;
+#img img {
+  width: 340px;
   border-radius: 15px;
   height: 340px;
 }
-#imgslide{
+#imgslide {
   width: 95%;
   height: 200px;
   padding: 10px;
@@ -110,22 +116,23 @@ line-height: 20px;
 
   text-align: center;
   margin-top: -267px;
-  margin-left: 57px;}
-#imgslide div{
+  margin-left: 57px;
+}
+#imgslide div {
   width: 175px;
   height: 175px;
   margin: 5px;
 
   background-image: url("../img/Palasstine.png");
   border-radius: 30px;
-  
+
   display: inline-block;
 }
-#imgslide div img{
+#imgslide div img {
   width: 175px;
   border-radius: 30px;
 }
-#imgslide div img:hover{
+#imgslide div img:hover {
   opacity: 0.7;
 }
 
@@ -156,7 +163,6 @@ footer ul li {
   height: 78px;
   text-align: center;
   color: white;
-
 }
 #pfooter p {
   padding: 33px;
@@ -169,18 +175,16 @@ footer ul li {
 }
 #span3 {
   color: white;
-    float: right;
-    margin-top: -295px;
-    font-size: 19px;
-    margin-right: 678px;
-    margin-bottom: 12px;
-
+  float: right;
+  margin-top: -295px;
+  font-size: 19px;
+  margin-right: 678px;
+  margin-bottom: 12px;
 }
 #ul3 {
   margin-left: -785px;
   margin-top: -290px;
   float: left;
-
 }
 #ul3 li a {
   text-decoration: none;
@@ -199,11 +203,11 @@ footer ul li:hover {
 #ul3 li a:hover {
   color: #c50f0f;
 }
-#ulfollow li{
+#ulfollow li {
   margin-top: 20px;
   padding: 9px;
 }
-#movingdiv{
+#movingdiv {
   float: left;
   width: 1350px;
   height: 168px;
@@ -211,8 +215,7 @@ footer ul li:hover {
   margin-top: -241px;
   margin-left: 0;
 }
-#movingp{
-  
+#movingp {
   font-size: 50px;
   color: white;
   font-weight: bold;
@@ -220,61 +223,65 @@ footer ul li:hover {
   animation: mymove 10s infinite;
   animation-timing-function: ease-in;
   margin-top: 53px;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
 }
 
 @keyframes mymove {
-  0%   { left:0px; }
- 
-  50% { left:800px; }
- 
-  100% { left:0px; }
+  0% {
+    left: 0px;
+  }
 
+  50% {
+    left: 800px;
+  }
 
+  100% {
+    left: 0px;
+  }
 }
 
-.flip-card{
+.flip-card {
   background-color: transparent;
-    width: 300px;
-    height: 300px;
-    perspective: 1000px;
-    float: right;
-    margin-right: 175px;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  float: right;
+  margin-right: 175px;
 }
-#img{
+#img {
   background-color: #bbb;
   color: black;
   margin-top: 16px;
 }
-#text{
+#text {
   line-height: 56px;
-    font-size: 20px;
-    font-family: 'Anton', sans-serif;
+  font-size: 20px;
+  font-family: "Anton", sans-serif;
 }
-#mager{
+#mager {
   line-height: 66px;
   font-size: 20px;
-  font-family: 'Anton', sans-serif;
+  font-family: "Anton", sans-serif;
 }
-#Github{
+#Github {
   text-decoration: none;
   line-height: 66px;
   font-size: 20px;
-  font-family: 'Anton', sans-serif;
+  font-family: "Anton", sans-serif;
 }
-#LinkeIn{
+#LinkeIn {
   text-decoration: none;
   line-height: 66px;
   font-size: 20px;
-  font-family: 'Anton', sans-serif;
+  font-family: "Anton", sans-serif;
 }
-#Github:hover{
+#Github:hover {
   color: #c50f0f;
 }
-#LinkeIn:hover{
+#LinkeIn:hover {
   color: #c50f0f;
 }
-section{
-  width: 1350px;;
+section {
+  width: 1350px;
   height: 650px;
 }
