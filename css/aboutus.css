@@ -1,3 +1,12 @@
+html{
+  min-width: 1350px;
+  overscroll-behavior: auto;
+}
+body{
+  min-width: 1350px;
+  overscroll-behavior: auto;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -10,7 +19,6 @@ header {
 body {
   background-color: #e7e7f3;
 
-  overflow-x: hidden;
 }
 nav {
   float: left;
@@ -134,6 +142,7 @@ nav ul li a:hover {
 }
 #imgslide div img:hover {
   opacity: 0.7;
+  cursor:pointer;
 }
 
 footer {
@@ -224,6 +233,7 @@ footer ul li:hover {
   animation-timing-function: ease-in;
   margin-top: 53px;
   font-family: "Dancing Script", cursive;
+  display: inline-block;
 }
 
 @keyframes mymove {
@@ -232,7 +242,7 @@ footer ul li:hover {
   }
 
   50% {
-    left: 800px;
+    left: 730px;
   }
 
   100% {
